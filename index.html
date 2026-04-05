@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Health Predictor</title>
+</head>
+<body>
+
+    <h2>Diabetes Prediction System</h2>
+
+    <form action="/predict" method="post">
+        <input type="text" name="v1" placeholder="Pregnancies" required><br><br>
+        <input type="text" name="v2" placeholder="Glucose" required><br><br>
+        <input type="text" name="v3" placeholder="Blood Pressure" required><br><br>
+        <input type="text" name="v4" placeholder="Skin Thickness" required><br><br>
+        <input type="text" name="v5" placeholder="Insulin" required><br><br>
+        <input type="text" name="v6" placeholder="BMI" required><br><br>
+        <input type="text" name="v7" placeholder="Diabetes Pedigree Function" required><br><br>
+        <input type="text" name="v8" placeholder="Age" required><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <h3>{{ prediction_text }}</h3>
+
+</body>
+</html>
